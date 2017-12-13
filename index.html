@@ -2,11 +2,22 @@
 <html>
 <head>
 <meta charset="gbk">
-<title>XaYoung'sBlogMaybe</title>
+<title>Xayoung'sBlogMaybe</title>
+<script>
+function showDetails(animal)
+{
+	var animalType = animal.getAttribute("data-animal-type");
+	alert("The game " + animal.innerHTML + "'s chinese name is " + animalType + ".");
+}
+</script>
 </head>
 <body>
+<h1>游戏</h1>
 <h1>Noah'sFantasy:</h1>
-<p>Progress:Still working</p>
+<p>Progress:playing</p>
 <img src="https://raw.githubusercontent.com/XaNemoYoung/xayoung/master/0fe5ec17fdfaaf5171a566a2875494eef11f7a6d.jpg" width="1280" height="720" />
+<ul>
+  <li onclick="showDetails(this)" id="Noah" data-animal-type="诺亚幻想">Noah's Fantasy</li>  
+</ul>
 </body>
 </html>
